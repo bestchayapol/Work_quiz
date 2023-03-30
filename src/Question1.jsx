@@ -18,7 +18,7 @@ const Question = () => {
     
     const [step,setStep] = useState(0)
     const [positionWidth,setPositionWidth] = useState(0)
-    const [_,setPositionHeight] = useState(0)
+    const [positionHeight,setPositionHeight] = useState(0)
   return (
     <Box display={"flex"} flexDirection="column" width={"100vw"} height={"100vh"} justifyContent={"center"} alignItems={"center"}>
       {step === 0 && <Password
@@ -28,7 +28,7 @@ const Question = () => {
       setStep={setStep} 
       positionWidth={positionWidth} 
       setPositionWidth={setPositionWidth}
-      positionHeight={_}
+      positionHeight={positionHeight}
       setPositionHeight={setPositionHeight} />}
       {step === 2 && <Party/>}
       
